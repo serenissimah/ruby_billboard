@@ -1,0 +1,6 @@
+<h1> New Artist </h1>
+<p>Add an artist on the list: </>
+<%= render partial: "form", artist: @artist %>
+
+<%= link_to "Show", artists_path(@artist) %>
+<%= link_to "Back", artists_path %>

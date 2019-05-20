@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bboard_name: MyString
+  song: one
+
+two:
+  bboard_name: MyString
+  song: two

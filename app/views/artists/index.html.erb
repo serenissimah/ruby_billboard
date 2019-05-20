@@ -1,0 +1,26 @@
+<h1 class="ui header">Artists from all over the world</h1>
+  <p>Find your favorite artist on the list below:</p>
+    <table class="ui striped table">
+      <thead>
+        <tr class="center aligned">
+          <th colspan="4"></th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <% @artists.each do |artist| %>
+          <tr class="center aligned">
+            <td>
+            <%= artist.name%> 
+            </td>
+            <td><%= link_to "Show", artist_path(artist) %></td>
+            <td><%= link_to "Edit", edit_artist_path(artist) %></td>
+            <td><%= link_to "Delete", artist_path(artist), :method => 'delete' %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <br />
+    <%= link_to "New Artist", new_artist_path %>
+  </body>
+</html>
